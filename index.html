@@ -10,9 +10,17 @@
 		<Assets>
 			<AssetObject id="32bitCluster" src="assets/models/32bitCluster.obj" mtl="assets/models/32bitCluster.mtl" />
 			<AssetImage id="black" src="assets/images/black.gif" />
+			<AssetImage id="circuitboard" src="assets/images/Abstract_Circuit_Board.jpg" />
 		</Assets>
 		<Room use_local_asset="room_plane" col="0 0 0" skybox_left_id="black" skybox_right_id="black" skybox_front_id="black" skybox_back_id="black" skybox_up_id="black" skybox_down_id="black" default_sounds="false">
-			<Object id="32bitCluster" pos="0 0 15" />
+			
+			<Text pos="0.500000 4.500000 15.500000" xdir="-1.000000 0.000000 -0.000002" ydir="-0.000002 -0.000001 1.000000" zdir="0.000000 1.000000 0.000001" scale="0.700000 0.600000 1.000000">SYSTEM</Text>
+			<Text pos="-0.400000 4.500000 15.500000" xdir="-1.000000 0.000000 0.000119" ydir="0.000119 0.000003 1.000000" zdir="0.000000 1.000000 -0.000003" scale="0.600000 0.700000 1.000000">COMMAND</Text>
+			<Text pos="-0.360000 4.500000 14.700000" xdir="-1.000000 0.000000 0.000119" ydir="0.000119 0.000003 1.000000" zdir="0.000000 1.000000 -0.000003" scale="0.500000 0.600000 1.000000">SHELL</Text>
+
+			<Object id="32bitCluster" pos="0 0.1 15" />
+			
+			<Image id="circuitboard" pos="0 0 15" xdir="1 0 0" ydir="0 0 -1" zdir="0 1 0" scale="16 24 1" collision_id="circuitboard" />
 
 	<!-- MetaGrid -->
 
